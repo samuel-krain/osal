@@ -56,7 +56,7 @@ osal_id_t count_sem_id;
 
 void task_1(void)
 {
-    uint32 status;
+    int32 status;
 
     OS_printf("Starting task 1\n");
 
@@ -111,7 +111,7 @@ void task_1(void)
 
 void task_2(void)
 {
-    uint32 status;
+    int32 status;
 
     OS_printf("Starting task 2\n");
 
@@ -140,7 +140,7 @@ void task_2(void)
 
 void task_3(void)
 {
-    uint32 status;
+    int32 status;
 
     OS_printf("Starting task 3\n");
 

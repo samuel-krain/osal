@@ -55,7 +55,7 @@ int counter = 0;
 
 void task_1(void)
 {
-    uint32 status;
+    int32 status;
 
     OS_printf("Starting task 1\n");
 
@@ -158,7 +158,7 @@ void task_2(void)
 
 void task_3(void)
 {
-    uint32 status;
+    int32 status;
 
     OS_printf("Starting task 3\n");
 
@@ -225,7 +225,7 @@ void UtTest_Setup(void)
 
 void MutexSetup(void)
 {
-    uint32 status;
+    int32 status;
 
     task_1_failures  = 0;
     task_2_failures  = 0;

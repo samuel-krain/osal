@@ -50,7 +50,7 @@ extern char  g_long_task_name[UT_OS_NAME_BUFF_SIZE];
 ** Global variables
 **--------------------------------------------------------------------------------*/
 
-uint32    g_task_result = 0;
+int32    g_task_result = 0;
 bool      g_task_handler_called;
 osal_id_t g_task_sync_sem;
 osal_id_t g_task_ids[UT_OS_TASK_LIST_LEN];

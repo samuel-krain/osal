@@ -72,8 +72,8 @@ void UT_os_setup_timerset_test(void);
 
 void UT_os_timercallback(osal_id_t timerId)
 {
-    int              deltaTime = 0;
-    static int32     loopCnt = 0, res = 0;
+    uint32              deltaTime = 0;
+    static uint32     loopCnt = 0, res = 0;
     static uint32    prevIntervalTime = 0;
     static uint32    currIntervalTime = 0;
     static OS_time_t currTime = {0}, endTime = {0};

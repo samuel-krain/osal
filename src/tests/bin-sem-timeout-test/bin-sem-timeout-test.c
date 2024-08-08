@@ -54,7 +54,7 @@ uint32    timer_interval = 2000000; /* 2 second period */
 uint32    timer_accuracy;
 uint32    timer_function_failures;
 
-int counter = 0;
+uint32 counter = 0;
 
 /*
  * Note that we should not call "printf" or anything
@@ -80,7 +80,7 @@ void TimerFunction(osal_id_t local_timer_id)
 
 void task_1(void)
 {
-    uint32            status;
+    int32            status;
     OS_bin_sem_prop_t bin_sem_prop;
 
     memset(&bin_sem_prop, 0, sizeof(bin_sem_prop));
