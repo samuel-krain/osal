@@ -58,7 +58,7 @@
  * The choice of whether to run a separate utility task
  * comes from osal compile-time config
  */
-#ifdef OSAL_CONFIG_CONSOLE_ASYNC
+#if 0 // disabled for RTEMS PolarFire
 #define OS_CONSOLE_IS_ASYNC true
 #else
 #define OS_CONSOLE_IS_ASYNC false
