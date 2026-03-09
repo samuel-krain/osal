@@ -322,7 +322,7 @@ set(OSAL_CONFIG_PRINTF_BUFFER_DEPTH     100
 # Set logically high (low number) for debugging
 #   - Messages from OS_printf() will have more timely output, but may
 #     adversely impact real time tasks.
-set(OSAL_CONFIG_UTILITYTASK_PRIORITY    245
+set(OSAL_CONFIG_UTILITYTASK_PRIORITY    200
     CACHE STRING "Priority level for the background utility task"
 )
 
@@ -331,7 +331,7 @@ set(OSAL_CONFIG_UTILITYTASK_PRIORITY    245
 # This applies to RTOS layers with precise stack control,
 # normally not necessary to change this unless the task implementation
 # changes.
-set(OSAL_CONFIG_UTILITYTASK_STACK_SIZE  2048
+set(OSAL_CONFIG_UTILITYTASK_STACK_SIZE  8192
     CACHE STRING "Stack size for the background utility task"
 )
 
